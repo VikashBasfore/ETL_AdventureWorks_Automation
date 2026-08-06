@@ -2,9 +2,9 @@
 
 ## 📌 Project Overview
 
-This project is an automated ETL (Extract, Transform, Load) pipeline developed in Python. It downloads the AdventureWorks Sales dataset from the provided GitHub repository, validates the data, performs cleaning and transformation, generates a business-ready Excel file, and prepares it for SharePoint upload.
+This project is an automated ETL (Extract, Transform, Load) pipeline developed in Python. It downloads the AdventureWorks Sales dataset from the provided GitHub repository, validates the extracted data, cleans and transforms it, generates a business-ready Excel file, and prepares it for SharePoint upload.
 
-The pipeline is modular, reusable, and can be executed using a single Python script.
+The pipeline is modular and can be executed using a single Python script.
 
 ---
 
@@ -27,12 +27,13 @@ AdventureWorks_Automation
 │   └── main.py
 │
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-# ⚙ Technologies Used
+# ⚙️ Technologies Used
 
 - Python
 - Selenium
@@ -71,14 +72,15 @@ SharePoint Module
 
 # Step 1 - Download Dataset
 
-The pipeline automatically downloads the AdventureWorks Sales Excel file from the provided GitHub repository.
+The `downloader.py` module automates the download of the AdventureWorks Sales dataset.
 
-### Tasks Performed
+### Operations Performed
 
-- Open the GitHub repository using Selenium.
-- Navigate to the AdventureWorks Sales dataset.
-- Download the Excel file.
-- Verify successful download.
+- Opens the GitHub repository using Selenium.
+- Navigates to the AdventureWorks Sales dataset.
+- Downloads the Excel workbook.
+- Verifies successful download.
+- Saves the file in the **downloads** folder.
 
 **Output**
 
@@ -91,16 +93,16 @@ AdventureWorks Sales.xlsx
 
 # Step 2 - Data Validation
 
-The downloaded dataset is validated before processing.
+The `validator.py` module validates the downloaded dataset.
 
-### Validation Checks
+### Validation Performed
 
-- Missing values
-- Duplicate rows
+- Missing Values
+- Duplicate Rows
 - Negative Sales Amount
 - Invalid Order Quantity
 
-A validation report is generated.
+A validation report is generated after processing all worksheets.
 
 **Output**
 
@@ -113,12 +115,12 @@ validation_report.txt
 
 # Step 3 - Data Cleaning
 
-The cleaning module improves the quality of the dataset.
+The `cleaner.py` module performs data cleaning.
 
-### Cleaning Performed
+### Cleaning Operations
 
 - Removed duplicate rows
-- Trimmed leading and trailing spaces
+- Removed leading and trailing spaces
 - Replaced missing `ShipDateKey` values with **-1**
 - Replaced missing `Color` values with **Unknown**
 
@@ -133,9 +135,9 @@ AdventureWorks_Sales_Cleaned.xlsx
 
 # Step 4 - Data Transformation
 
-The cleaned dataset is transformed into a business-ready dataset.
+The `transformer.py` module creates additional business columns.
 
-### New Columns Created
+### New Columns Added
 
 - Profit
 - Profit Margin %
@@ -156,25 +158,25 @@ AdventureWorks_Sales_Final.xlsx
 
 # Step 5 - SharePoint Module
 
-A SharePoint upload module has been implemented.
+The `sharepoint.py` module checks the SharePoint configuration.
 
-Since no SharePoint site or credentials were provided for this assignment, the module detects the placeholder configuration and skips the upload while recording the status in the log.
+Since no SharePoint site or credentials were provided for this project, the upload is skipped and the status is recorded in the pipeline log.
 
 ---
 
 # Step 6 - Logging
 
-The pipeline records every execution step.
+The `logger.py` module records every stage of pipeline execution.
 
-The log contains:
+The log includes:
 
-- Pipeline Start
-- Dataset Download
-- Validation
-- Cleaning
-- Transformation
+- Pipeline Started
+- Dataset Download Completed
+- Validation Completed
+- Cleaning Completed
+- Transformation Completed
 - SharePoint Status
-- Pipeline Completion
+- Pipeline Completed
 
 **Output**
 
@@ -185,19 +187,24 @@ pipeline.log
 
 ---
 
-# ▶ How to Run
+# Step 7 - Pipeline Execution
 
-Install the required libraries:
+The `main.py` module controls the complete ETL workflow.
 
-```bash
-pip install -r requirements.txt
-```
-
-Run the complete pipeline:
+Run the pipeline using:
 
 ```bash
 python scripts/main.py
 ```
+
+This automatically executes:
+
+1. Dataset Download
+2. Data Validation
+3. Data Cleaning
+4. Data Transformation
+5. SharePoint Module
+6. Pipeline Completion
 
 ---
 
@@ -240,14 +247,15 @@ pipeline.log
 
 ---
 
-# ✅ Features
+# ✅ Project Features
 
 - Automated dataset download
-- Data validation
-- Data cleaning
-- Data transformation
+- Automated data validation
+- Automated data cleaning
+- Automated data transformation
 - Business-ready Excel generation
-- Logging and error handling
+- Logging
+- Error handling
 - Modular project structure
 - Single-command pipeline execution
 
