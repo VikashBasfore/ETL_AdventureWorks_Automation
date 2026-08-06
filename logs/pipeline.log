@@ -1,0 +1,270 @@
+2026-08-06 18:10:16 | INFO | Pipeline Started
+2026-08-06 18:10:16 | INFO | Downloading Dataset
+2026-08-06 18:10:16 | INFO | Validation Completed
+2026-08-06 18:10:16 | WARNING | Missing Values Found
+2026-08-06 18:10:16 | INFO | Cleaning Completed
+2026-08-06 18:10:16 | INFO | Transformation Completed
+2026-08-06 18:10:16 | ERROR | Sample Error Message
+2026-08-06 18:10:16 | INFO | Pipeline Finished
+2026-08-06 18:14:01 | INFO | ============================================================
+2026-08-06 18:14:01 | INFO | AdventureWorks Dataset Downloader Started
+2026-08-06 18:14:01 | INFO | ============================================================
+2026-08-06 18:14:01 | INFO | Launching Chrome Browser...
+2026-08-06 18:14:04 | INFO | Opening GitHub Repository...
+2026-08-06 18:14:06 | INFO | Searching for Excel file...
+2026-08-06 18:14:07 | INFO | Excel file page opened.
+2026-08-06 18:14:09 | INFO | Starting dataset download...
+2026-08-06 18:14:09 | INFO | Dataset downloaded successfully.
+2026-08-06 18:14:09 | INFO | File Location : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\downloads\AdventureWorks Sales.xlsx
+2026-08-06 18:14:09 | INFO | File Size     : 13.66 MB
+2026-08-06 18:14:09 | INFO | Closing Chrome Browser...
+2026-08-06 18:14:26 | INFO | Browser Closed.
+2026-08-06 18:14:26 | INFO | ============================================================
+2026-08-06 18:14:26 | INFO | Downloader Completed Successfully.
+2026-08-06 18:14:56 | INFO | ============================================================
+2026-08-06 18:14:56 | INFO | AdventureWorks Dataset Downloader Started
+2026-08-06 18:14:56 | INFO | ============================================================
+2026-08-06 18:14:56 | INFO | Launching Chrome Browser...
+2026-08-06 18:15:00 | INFO | Opening GitHub Repository...
+2026-08-06 18:15:02 | INFO | Searching for Excel file...
+2026-08-06 18:15:02 | INFO | Excel file page opened.
+2026-08-06 18:15:04 | INFO | Starting dataset download...
+2026-08-06 18:15:04 | INFO | Dataset downloaded successfully.
+2026-08-06 18:15:04 | INFO | File Location : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\downloads\AdventureWorks Sales.xlsx
+2026-08-06 18:15:04 | INFO | File Size     : 13.66 MB
+2026-08-06 18:15:04 | INFO | Closing Chrome Browser...
+2026-08-06 18:15:26 | INFO | Browser Closed.
+2026-08-06 18:15:26 | INFO | ============================================================
+2026-08-06 18:15:26 | INFO | Downloader Completed Successfully.
+2026-08-06 18:18:19 | INFO | ============================================================
+2026-08-06 18:18:19 | INFO | AdventureWorks Dataset Downloader Started
+2026-08-06 18:18:19 | INFO | ============================================================
+2026-08-06 18:18:19 | INFO | Old dataset found.
+2026-08-06 18:18:19 | INFO | Old dataset deleted.
+2026-08-06 18:18:19 | INFO | Launching Chrome Browser...
+2026-08-06 18:18:20 | INFO | Opening GitHub Repository...
+2026-08-06 18:18:24 | INFO | Searching for Excel file...
+2026-08-06 18:18:24 | INFO | Excel file page opened.
+2026-08-06 18:18:26 | INFO | Starting download...
+2026-08-06 18:18:31 | INFO | Dataset downloaded successfully.
+2026-08-06 18:18:31 | INFO | File Location : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\downloads\AdventureWorks Sales.xlsx
+2026-08-06 18:18:31 | INFO | File Size : 13.66 MB
+2026-08-06 18:18:31 | INFO | Closing browser...
+2026-08-06 18:18:56 | INFO | Browser closed.
+2026-08-06 18:18:56 | INFO | ============================================================
+2026-08-06 18:18:56 | INFO | Downloader completed successfully.
+2026-08-06 18:28:40 | INFO | ============================================================
+2026-08-06 18:28:40 | INFO | SharePoint Upload Started
+2026-08-06 18:28:40 | INFO | ============================================================
+2026-08-06 18:28:40 | INFO | Connecting to SharePoint...
+2026-08-06 18:28:40 | ERROR | SharePoint upload failed: with_user_credentials uses the legacy SAML/ACS auth flow which Microsoft has retired for SharePoint Online. Use with_username_and_password(tenant, client_id, username, password) instead. For on-premises SharePoint, use allow_ntlm=True.
+Traceback (most recent call last):
+  File "c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\scripts\sharepoint.py", line 47, in upload_to_sharepoint
+    ).with_credentials(
+      ~~~~~~~~~~~~~~~~^
+        UserCredential(USERNAME, PASSWORD)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\venv\Lib\site-packages\office365\sharepoint\client_context.py", line 257, in with_credentials
+    self.authentication_context.with_credentials(credentials)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\venv\Lib\site-packages\office365\runtime\auth\authentication_context.py", line 320, in with_credentials
+    raise RuntimeError(
+    ...<4 lines>...
+    )
+RuntimeError: with_user_credentials uses the legacy SAML/ACS auth flow which Microsoft has retired for SharePoint Online. Use with_username_and_password(tenant, client_id, username, password) instead. For on-premises SharePoint, use allow_ntlm=True.
+2026-08-06 18:28:40 | ERROR | SharePoint Module Failed.
+2026-08-06 18:30:45 | INFO | ============================================================
+2026-08-06 18:30:45 | INFO | SharePoint Upload Started
+2026-08-06 18:30:45 | INFO | ============================================================
+2026-08-06 18:30:45 | WARNING | SharePoint configuration not provided.
+2026-08-06 18:30:45 | INFO | Upload skipped (Assignment Mode).
+2026-08-06 18:30:45 | INFO | File Ready For Upload:
+2026-08-06 18:30:45 | INFO | c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\output\AdventureWorks_Sales_Final.xlsx
+2026-08-06 18:30:45 | INFO | ============================================================
+2026-08-06 18:30:45 | INFO | SharePoint Module Completed Successfully.
+2026-08-06 18:38:50 | INFO | ======================================================================
+2026-08-06 18:38:50 | INFO | AdventureWorks ETL Pipeline Started
+2026-08-06 18:38:50 | INFO | ======================================================================
+2026-08-06 18:38:50 | INFO | ======================================================================
+2026-08-06 18:38:50 | INFO | AdventureWorks Dataset Download Started
+2026-08-06 18:38:50 | INFO | ======================================================================
+2026-08-06 18:38:50 | INFO | Existing dataset found. Removing old file...
+2026-08-06 18:38:50 | INFO | Old dataset removed successfully.
+2026-08-06 18:38:50 | INFO | Launching Chrome Browser...
+2026-08-06 18:38:53 | INFO | Opening GitHub Repository...
+2026-08-06 18:38:56 | INFO | Searching for AdventureWorks Excel file...
+2026-08-06 18:38:57 | INFO | Excel file page opened successfully.
+2026-08-06 18:38:59 | INFO | Downloading dataset...
+2026-08-06 18:39:03 | INFO | Dataset downloaded successfully.
+2026-08-06 18:39:03 | INFO | File Location : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\downloads\AdventureWorks Sales.xlsx
+2026-08-06 18:39:03 | INFO | File Size : 13.66 MB
+2026-08-06 18:39:03 | INFO | Closing Chrome Browser...
+2026-08-06 18:39:23 | INFO | Browser closed.
+2026-08-06 18:39:23 | INFO | ======================================================================
+2026-08-06 18:39:23 | INFO | ======================================================================
+2026-08-06 18:39:23 | INFO | Dataset Validation Started
+2026-08-06 18:39:23 | INFO | ======================================================================
+2026-08-06 18:39:24 | INFO | Validating Sheet : Sales Order_data
+2026-08-06 18:39:28 | INFO | Validating Sheet : Sales Territory_data
+2026-08-06 18:39:29 | INFO | Validating Sheet : Sales_data
+2026-08-06 18:39:37 | INFO | Validating Sheet : Reseller_data
+2026-08-06 18:39:38 | INFO | Validating Sheet : Date_data
+2026-08-06 18:39:39 | INFO | Validating Sheet : Product_data
+2026-08-06 18:39:40 | INFO | Validating Sheet : Customer_data
+2026-08-06 18:39:41 | INFO | Validation Completed Successfully.
+2026-08-06 18:39:41 | INFO | Validation Report : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\logs\validation_report.txt
+2026-08-06 18:39:41 | INFO | ======================================================================
+2026-08-06 18:39:41 | INFO | ============================================================
+2026-08-06 18:39:41 | INFO | AdventureWorks Data Cleaning Started
+2026-08-06 18:39:41 | INFO | ============================================================
+2026-08-06 18:39:42 | INFO | Processing Sheet : Sales Order_data
+2026-08-06 18:39:46 | INFO | Rows Written        : 121253
+2026-08-06 18:39:46 | INFO | Duplicates Removed  : 0
+2026-08-06 18:39:46 | INFO | Processing Sheet : Sales Territory_data
+2026-08-06 18:39:47 | INFO | Rows Written        : 11
+2026-08-06 18:39:47 | INFO | Duplicates Removed  : 0
+2026-08-06 18:39:47 | INFO | Processing Sheet : Sales_data
+2026-08-06 18:39:59 | INFO | Rows Written        : 121253
+2026-08-06 18:39:59 | INFO | Duplicates Removed  : 0
+2026-08-06 18:39:59 | INFO | Processing Sheet : Reseller_data
+2026-08-06 18:40:01 | INFO | Rows Written        : 702
+2026-08-06 18:40:01 | INFO | Duplicates Removed  : 0
+2026-08-06 18:40:01 | INFO | Processing Sheet : Date_data
+2026-08-06 18:40:01 | INFO | Rows Written        : 1461
+2026-08-06 18:40:01 | INFO | Duplicates Removed  : 0
+2026-08-06 18:40:01 | INFO | Processing Sheet : Product_data
+2026-08-06 18:40:02 | INFO | Rows Written        : 397
+2026-08-06 18:40:02 | INFO | Duplicates Removed  : 0
+2026-08-06 18:40:02 | INFO | Processing Sheet : Customer_data
+2026-08-06 18:40:04 | INFO | Rows Written        : 18485
+2026-08-06 18:40:04 | INFO | Duplicates Removed  : 0
+2026-08-06 18:40:17 | INFO | ============================================================
+2026-08-06 18:40:17 | INFO | Cleaning Completed Successfully
+2026-08-06 18:40:17 | INFO | Cleaned File Saved : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\output\AdventureWorks_Sales_Cleaned.xlsx
+2026-08-06 18:40:17 | INFO | ============================================================
+2026-08-06 18:40:17 | INFO | ======================================================================
+2026-08-06 18:40:17 | INFO | AdventureWorks Data Transformation Started
+2026-08-06 18:40:17 | INFO | ======================================================================
+2026-08-06 18:40:17 | INFO | Processing Sheet : Sales Order_data
+2026-08-06 18:40:23 | INFO | Rows Written : 121253
+2026-08-06 18:40:23 | INFO | Processing Sheet : Sales Territory_data
+2026-08-06 18:40:23 | INFO | Rows Written : 11
+2026-08-06 18:40:23 | INFO | Processing Sheet : Sales_data
+2026-08-06 18:40:37 | INFO | Rows Written : 121253
+2026-08-06 18:40:37 | INFO | Processing Sheet : Reseller_data
+2026-08-06 18:40:37 | INFO | Rows Written : 702
+2026-08-06 18:40:37 | INFO | Processing Sheet : Date_data
+2026-08-06 18:40:38 | INFO | Rows Written : 1461
+2026-08-06 18:40:38 | INFO | Processing Sheet : Product_data
+2026-08-06 18:40:38 | INFO | Rows Written : 397
+2026-08-06 18:40:38 | INFO | Processing Sheet : Customer_data
+2026-08-06 18:40:39 | INFO | Rows Written : 18485
+2026-08-06 18:40:57 | INFO | ======================================================================
+2026-08-06 18:40:57 | INFO | Transformation Completed Successfully
+2026-08-06 18:40:57 | INFO | Final File : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\output\AdventureWorks_Sales_Final.xlsx
+2026-08-06 18:40:57 | INFO | ======================================================================
+2026-08-06 18:40:57 | INFO | ============================================================
+2026-08-06 18:40:57 | INFO | SharePoint Upload Started
+2026-08-06 18:40:57 | INFO | ============================================================
+2026-08-06 18:40:57 | WARNING | SharePoint configuration not provided.
+2026-08-06 18:40:57 | INFO | Upload skipped (Assignment Mode).
+2026-08-06 18:40:57 | INFO | File Ready For Upload:
+2026-08-06 18:40:57 | INFO | c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\output\AdventureWorks_Sales_Final.xlsx
+2026-08-06 18:40:57 | INFO | ============================================================
+2026-08-06 18:40:57 | INFO | ======================================================================
+2026-08-06 18:40:57 | INFO | Pipeline Completed Successfully
+2026-08-06 18:40:57 | INFO | ======================================================================
+2026-08-06 18:56:49 | INFO | ======================================================================
+2026-08-06 18:56:49 | INFO | AdventureWorks ETL Pipeline Started
+2026-08-06 18:56:49 | INFO | ======================================================================
+2026-08-06 18:56:49 | INFO | ======================================================================
+2026-08-06 18:56:49 | INFO | AdventureWorks Dataset Download Started
+2026-08-06 18:56:49 | INFO | ======================================================================
+2026-08-06 18:56:49 | INFO | Existing dataset found. Removing old file...
+2026-08-06 18:56:49 | INFO | Old dataset removed successfully.
+2026-08-06 18:56:49 | INFO | Launching Chrome Browser...
+2026-08-06 18:56:50 | INFO | Opening GitHub Repository...
+2026-08-06 18:56:54 | INFO | Searching for AdventureWorks Excel file...
+2026-08-06 18:56:54 | INFO | Excel file page opened successfully.
+2026-08-06 18:56:56 | INFO | Downloading dataset...
+2026-08-06 18:57:00 | INFO | Dataset downloaded successfully.
+2026-08-06 18:57:00 | INFO | File Location : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\downloads\AdventureWorks Sales.xlsx
+2026-08-06 18:57:00 | INFO | File Size : 13.66 MB
+2026-08-06 18:57:00 | INFO | Closing Chrome Browser...
+2026-08-06 18:57:45 | INFO | Browser closed.
+2026-08-06 18:57:45 | INFO | ======================================================================
+2026-08-06 18:57:45 | INFO | ======================================================================
+2026-08-06 18:57:45 | INFO | Dataset Validation Started
+2026-08-06 18:57:45 | INFO | ======================================================================
+2026-08-06 18:57:46 | INFO | Validating Sheet : Sales Order_data
+2026-08-06 18:57:49 | INFO | Validating Sheet : Sales Territory_data
+2026-08-06 18:57:51 | INFO | Validating Sheet : Sales_data
+2026-08-06 18:57:58 | INFO | Validating Sheet : Reseller_data
+2026-08-06 18:57:59 | INFO | Validating Sheet : Date_data
+2026-08-06 18:58:01 | INFO | Validating Sheet : Product_data
+2026-08-06 18:58:02 | INFO | Validating Sheet : Customer_data
+2026-08-06 18:58:03 | INFO | Validation Completed Successfully.
+2026-08-06 18:58:03 | INFO | Validation Report : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\logs\validation_report.txt
+2026-08-06 18:58:03 | INFO | ======================================================================
+2026-08-06 18:58:03 | INFO | ============================================================
+2026-08-06 18:58:03 | INFO | AdventureWorks Data Cleaning Started
+2026-08-06 18:58:03 | INFO | ============================================================
+2026-08-06 18:58:04 | INFO | Processing Sheet : Sales Order_data
+2026-08-06 18:58:09 | INFO | Rows Written        : 121253
+2026-08-06 18:58:09 | INFO | Duplicates Removed  : 0
+2026-08-06 18:58:09 | INFO | Processing Sheet : Sales Territory_data
+2026-08-06 18:58:10 | INFO | Rows Written        : 11
+2026-08-06 18:58:10 | INFO | Duplicates Removed  : 0
+2026-08-06 18:58:10 | INFO | Processing Sheet : Sales_data
+2026-08-06 18:58:23 | INFO | Rows Written        : 121253
+2026-08-06 18:58:23 | INFO | Duplicates Removed  : 0
+2026-08-06 18:58:23 | INFO | Processing Sheet : Reseller_data
+2026-08-06 18:58:24 | INFO | Rows Written        : 702
+2026-08-06 18:58:24 | INFO | Duplicates Removed  : 0
+2026-08-06 18:58:24 | INFO | Processing Sheet : Date_data
+2026-08-06 18:58:25 | INFO | Rows Written        : 1461
+2026-08-06 18:58:25 | INFO | Duplicates Removed  : 0
+2026-08-06 18:58:25 | INFO | Processing Sheet : Product_data
+2026-08-06 18:58:26 | INFO | Rows Written        : 397
+2026-08-06 18:58:26 | INFO | Duplicates Removed  : 0
+2026-08-06 18:58:26 | INFO | Processing Sheet : Customer_data
+2026-08-06 18:58:28 | INFO | Rows Written        : 18485
+2026-08-06 18:58:28 | INFO | Duplicates Removed  : 0
+2026-08-06 18:58:41 | INFO | ============================================================
+2026-08-06 18:58:41 | INFO | Cleaning Completed Successfully
+2026-08-06 18:58:41 | INFO | Cleaned File Saved : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\output\AdventureWorks_Sales_Cleaned.xlsx
+2026-08-06 18:58:41 | INFO | ============================================================
+2026-08-06 18:58:41 | INFO | ======================================================================
+2026-08-06 18:58:41 | INFO | AdventureWorks Data Transformation Started
+2026-08-06 18:58:41 | INFO | ======================================================================
+2026-08-06 18:58:41 | INFO | Processing Sheet : Sales Order_data
+2026-08-06 18:58:47 | INFO | Rows Written : 121253
+2026-08-06 18:58:47 | INFO | Processing Sheet : Sales Territory_data
+2026-08-06 18:58:47 | INFO | Rows Written : 11
+2026-08-06 18:58:47 | INFO | Processing Sheet : Sales_data
+2026-08-06 18:59:02 | INFO | Rows Written : 121253
+2026-08-06 18:59:02 | INFO | Processing Sheet : Reseller_data
+2026-08-06 18:59:02 | INFO | Rows Written : 702
+2026-08-06 18:59:02 | INFO | Processing Sheet : Date_data
+2026-08-06 18:59:02 | INFO | Rows Written : 1461
+2026-08-06 18:59:02 | INFO | Processing Sheet : Product_data
+2026-08-06 18:59:02 | INFO | Rows Written : 397
+2026-08-06 18:59:02 | INFO | Processing Sheet : Customer_data
+2026-08-06 18:59:04 | INFO | Rows Written : 18485
+2026-08-06 18:59:22 | INFO | ======================================================================
+2026-08-06 18:59:22 | INFO | Transformation Completed Successfully
+2026-08-06 18:59:22 | INFO | Final File : c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\output\AdventureWorks_Sales_Final.xlsx
+2026-08-06 18:59:22 | INFO | ======================================================================
+2026-08-06 18:59:22 | INFO | ============================================================
+2026-08-06 18:59:22 | INFO | SharePoint Upload Started
+2026-08-06 18:59:22 | INFO | ============================================================
+2026-08-06 18:59:22 | WARNING | SharePoint configuration not provided.
+2026-08-06 18:59:22 | INFO | Upload skipped (Assignment Mode).
+2026-08-06 18:59:22 | INFO | File Ready For Upload:
+2026-08-06 18:59:22 | INFO | c:\Users\vikas\OneDrive\Desktop\AdventureWorks_Automation\output\AdventureWorks_Sales_Final.xlsx
+2026-08-06 18:59:22 | INFO | ============================================================
+2026-08-06 18:59:22 | INFO | ======================================================================
+2026-08-06 18:59:22 | INFO | Pipeline Completed Successfully
+2026-08-06 18:59:22 | INFO | ======================================================================

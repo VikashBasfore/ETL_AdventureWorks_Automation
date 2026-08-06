@@ -1,0 +1,165 @@
+============================================================
+AdventureWorks Validation Report
+============================================================
+
+============================================================
+Sheet : Sales Order_data
+============================================================
+Rows    : 121253
+Columns : 4
+
+Missing Values
+-------------------------
+Channel              0
+SalesOrderLineKey    0
+Sales Order          0
+Sales Order Line     0
+
+Duplicate Rows
+-------------------------
+0
+
+
+============================================================
+Sheet : Sales Territory_data
+============================================================
+Rows    : 11
+Columns : 4
+
+Missing Values
+-------------------------
+SalesTerritoryKey    0
+Region               0
+Country              0
+Group                0
+
+Duplicate Rows
+-------------------------
+0
+
+
+============================================================
+Sheet : Sales_data
+============================================================
+Rows    : 121253
+Columns : 15
+
+Missing Values
+-------------------------
+SalesOrderLineKey             0
+ResellerKey                   0
+CustomerKey                   0
+ProductKey                    0
+OrderDateKey                  0
+DueDateKey                    0
+ShipDateKey                2113
+SalesTerritoryKey             0
+Order Quantity                0
+Unit Price                    0
+Extended Amount               0
+Unit Price Discount Pct       0
+Product Standard Cost         0
+Total Product Cost            0
+Sales Amount                  0
+
+Duplicate Rows
+-------------------------
+0
+
+Negative Sales Amount
+-------------------------
+0
+
+Invalid Order Quantity
+-------------------------
+0
+
+
+============================================================
+Sheet : Reseller_data
+============================================================
+Rows    : 702
+Columns : 8
+
+Missing Values
+-------------------------
+ResellerKey       0
+Reseller ID       0
+Business Type     0
+Reseller          0
+City              0
+State-Province    0
+Country-Region    0
+Postal Code       0
+
+Duplicate Rows
+-------------------------
+0
+
+
+============================================================
+Sheet : Date_data
+============================================================
+Rows    : 1461
+Columns : 7
+
+Missing Values
+-------------------------
+DateKey           0
+Date              0
+Fiscal Year       0
+Fiscal Quarter    0
+Month             0
+Full Date         0
+MonthKey          0
+
+Duplicate Rows
+-------------------------
+0
+
+
+============================================================
+Sheet : Product_data
+============================================================
+Rows    : 397
+Columns : 9
+
+Missing Values
+-------------------------
+ProductKey        0
+SKU               0
+Product           0
+Standard Cost     0
+Color            56
+List Price        0
+Model             0
+Subcategory       0
+Category          0
+
+Duplicate Rows
+-------------------------
+0
+
+
+============================================================
+Sheet : Customer_data
+============================================================
+Rows    : 18485
+Columns : 7
+
+Missing Values
+-------------------------
+CustomerKey       0
+Customer ID       0
+Customer          0
+City              0
+State-Province    0
+Country-Region    0
+Postal Code       0
+
+Duplicate Rows
+-------------------------
+0
+
+
+Validation Completed Successfully
